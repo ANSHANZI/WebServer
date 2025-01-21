@@ -1,0 +1,82 @@
+[
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/src",
+  "command": "/usr/bin/c++ -Dhwy_shared_EXPORTS -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -fPIC -std=gnu++17 -o CMakeFiles/hwy_shared.dir/Acceptor.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/src/Acceptor.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/src/Acceptor.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/src",
+  "command": "/usr/bin/c++ -Dhwy_shared_EXPORTS -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -fPIC -std=gnu++17 -o CMakeFiles/hwy_shared.dir/Buffer.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/src/Buffer.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/src/Buffer.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/src",
+  "command": "/usr/bin/c++ -Dhwy_shared_EXPORTS -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -fPIC -std=gnu++17 -o CMakeFiles/hwy_shared.dir/Channel.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/src/Channel.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/src/Channel.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/src",
+  "command": "/usr/bin/c++ -Dhwy_shared_EXPORTS -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -fPIC -std=gnu++17 -o CMakeFiles/hwy_shared.dir/Connection.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/src/Connection.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/src/Connection.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/src",
+  "command": "/usr/bin/c++ -Dhwy_shared_EXPORTS -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -fPIC -std=gnu++17 -o CMakeFiles/hwy_shared.dir/EventLoop.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/src/EventLoop.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/src/EventLoop.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/src",
+  "command": "/usr/bin/c++ -Dhwy_shared_EXPORTS -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -fPIC -std=gnu++17 -o CMakeFiles/hwy_shared.dir/InetAddress.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/src/InetAddress.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/src/InetAddress.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/src",
+  "command": "/usr/bin/c++ -Dhwy_shared_EXPORTS -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -fPIC -std=gnu++17 -o CMakeFiles/hwy_shared.dir/Server.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/src/Server.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/src/Server.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/src",
+  "command": "/usr/bin/c++ -Dhwy_shared_EXPORTS -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -fPIC -std=gnu++17 -o CMakeFiles/hwy_shared.dir/Socket.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/src/Socket.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/src/Socket.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/src",
+  "command": "/usr/bin/c++ -Dhwy_shared_EXPORTS -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -fPIC -std=gnu++17 -o CMakeFiles/hwy_shared.dir/ThreadPool.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/src/ThreadPool.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/src/ThreadPool.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/src",
+  "command": "/usr/bin/c++ -Dhwy_shared_EXPORTS -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -fPIC -std=gnu++17 -o CMakeFiles/hwy_shared.dir/epoll.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/src/epoll.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/src/epoll.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/src",
+  "command": "/usr/bin/c++ -Dhwy_shared_EXPORTS -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -fPIC -std=gnu++17 -o CMakeFiles/hwy_shared.dir/util.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/src/util.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/src/util.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/test",
+  "command": "/usr/bin/c++  -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -std=gnu++17 -o CMakeFiles/ThreadPoolTest.dir/ThreadPoolTest.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/test/ThreadPoolTest.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/test/ThreadPoolTest.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/test",
+  "command": "/usr/bin/c++  -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -std=gnu++17 -o CMakeFiles/multipile_client.dir/multipile_client.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/test/multipile_client.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/test/multipile_client.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/test",
+  "command": "/usr/bin/c++  -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -std=gnu++17 -o CMakeFiles/server.dir/server.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/test/server.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/test/server.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/test",
+  "command": "/usr/bin/c++  -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -std=gnu++17 -o CMakeFiles/single_client.dir/single_client.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/test/single_client.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/test/single_client.cpp"
+},
+{
+  "directory": "/home/hu/WebSever/30DAYS/DAY12/build/test",
+  "command": "/usr/bin/c++  -I/home/hu/WebSever/30DAYS/DAY12/src/include -I/home/hu/WebSever/30DAYS/DAY12/test/include  -fPIC -Wall -Wextra -std=c++17 -pthread -Wno-unused-parameter -Wno-attributes -std=gnu++17 -o CMakeFiles/test.dir/test.cpp.o -c /home/hu/WebSever/30DAYS/DAY12/test/test.cpp",
+  "file": "/home/hu/WebSever/30DAYS/DAY12/test/test.cpp"
+}
+]
