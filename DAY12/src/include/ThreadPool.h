@@ -15,7 +15,7 @@ private:
   std::condition_variable condition; //条件变量
   bool stop;                         //线程池停止标志
 public:
-  ThreadPool(int size);
+  ThreadPool(int size=10);
   ~ThreadPool();
 
   // void add(std::function<void()> task);

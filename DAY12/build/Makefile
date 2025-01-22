@@ -117,95 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named format
+# Target rules for targets named WebServerLib
 
 # Build rule for target.
-format: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 format
-.PHONY : format
+WebServerLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WebServerLib
+.PHONY : WebServerLib
 
 # fast build rule for target.
-format/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/format.dir/build.make CMakeFiles/format.dir/build
-.PHONY : format/fast
-
-#=============================================================================
-# Target rules for targets named check-format
-
-# Build rule for target.
-check-format: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 check-format
-.PHONY : check-format
-
-# fast build rule for target.
-check-format/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/check-format.dir/build.make CMakeFiles/check-format.dir/build
-.PHONY : check-format/fast
-
-#=============================================================================
-# Target rules for targets named cpplint
-
-# Build rule for target.
-cpplint: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpplint
-.PHONY : cpplint
-
-# fast build rule for target.
-cpplint/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpplint.dir/build.make CMakeFiles/cpplint.dir/build
-.PHONY : cpplint/fast
-
-#=============================================================================
-# Target rules for targets named clang-tidy
-
-# Build rule for target.
-clang-tidy: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clang-tidy
-.PHONY : clang-tidy
-
-# fast build rule for target.
-clang-tidy/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clang-tidy.dir/build.make CMakeFiles/clang-tidy.dir/build
-.PHONY : clang-tidy/fast
-
-#=============================================================================
-# Target rules for targets named hwy_shared
-
-# Build rule for target.
-hwy_shared: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hwy_shared
-.PHONY : hwy_shared
-
-# fast build rule for target.
-hwy_shared/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/hwy_shared.dir/build.make src/CMakeFiles/hwy_shared.dir/build
-.PHONY : hwy_shared/fast
-
-#=============================================================================
-# Target rules for targets named build-tests
-
-# Build rule for target.
-build-tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 build-tests
-.PHONY : build-tests
-
-# fast build rule for target.
-build-tests/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/build-tests.dir/build.make test/CMakeFiles/build-tests.dir/build
-.PHONY : build-tests/fast
-
-#=============================================================================
-# Target rules for targets named check-tests
-
-# Build rule for target.
-check-tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 check-tests
-.PHONY : check-tests
-
-# fast build rule for target.
-check-tests/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/check-tests.dir/build.make test/CMakeFiles/check-tests.dir/build
-.PHONY : check-tests/fast
+WebServerLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/build
+.PHONY : WebServerLib/fast
 
 #=============================================================================
 # Target rules for targets named ThreadPoolTest
@@ -217,7 +139,7 @@ ThreadPoolTest: cmake_check_build_system
 
 # fast build rule for target.
 ThreadPoolTest/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/ThreadPoolTest.dir/build.make test/CMakeFiles/ThreadPoolTest.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPoolTest.dir/build.make CMakeFiles/ThreadPoolTest.dir/build
 .PHONY : ThreadPoolTest/fast
 
 #=============================================================================
@@ -230,7 +152,7 @@ multipile_client: cmake_check_build_system
 
 # fast build rule for target.
 multipile_client/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/multipile_client.dir/build.make test/CMakeFiles/multipile_client.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multipile_client.dir/build.make CMakeFiles/multipile_client.dir/build
 .PHONY : multipile_client/fast
 
 #=============================================================================
@@ -243,7 +165,7 @@ server: cmake_check_build_system
 
 # fast build rule for target.
 server/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/server.dir/build.make test/CMakeFiles/server.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
 #=============================================================================
@@ -256,7 +178,7 @@ single_client: cmake_check_build_system
 
 # fast build rule for target.
 single_client/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/single_client.dir/build.make test/CMakeFiles/single_client.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_client.dir/build.make CMakeFiles/single_client.dir/build
 .PHONY : single_client/fast
 
 #=============================================================================
@@ -269,8 +191,392 @@ test: cmake_check_build_system
 
 # fast build rule for target.
 test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
+
+src/Acceptor.o: src/Acceptor.cpp.o
+.PHONY : src/Acceptor.o
+
+# target to build an object file
+src/Acceptor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Acceptor.cpp.o
+.PHONY : src/Acceptor.cpp.o
+
+src/Acceptor.i: src/Acceptor.cpp.i
+.PHONY : src/Acceptor.i
+
+# target to preprocess a source file
+src/Acceptor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Acceptor.cpp.i
+.PHONY : src/Acceptor.cpp.i
+
+src/Acceptor.s: src/Acceptor.cpp.s
+.PHONY : src/Acceptor.s
+
+# target to generate assembly for a file
+src/Acceptor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Acceptor.cpp.s
+.PHONY : src/Acceptor.cpp.s
+
+src/Buffer.o: src/Buffer.cpp.o
+.PHONY : src/Buffer.o
+
+# target to build an object file
+src/Buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Buffer.cpp.o
+.PHONY : src/Buffer.cpp.o
+
+src/Buffer.i: src/Buffer.cpp.i
+.PHONY : src/Buffer.i
+
+# target to preprocess a source file
+src/Buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Buffer.cpp.i
+.PHONY : src/Buffer.cpp.i
+
+src/Buffer.s: src/Buffer.cpp.s
+.PHONY : src/Buffer.s
+
+# target to generate assembly for a file
+src/Buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Buffer.cpp.s
+.PHONY : src/Buffer.cpp.s
+
+src/Channel.o: src/Channel.cpp.o
+.PHONY : src/Channel.o
+
+# target to build an object file
+src/Channel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Channel.cpp.o
+.PHONY : src/Channel.cpp.o
+
+src/Channel.i: src/Channel.cpp.i
+.PHONY : src/Channel.i
+
+# target to preprocess a source file
+src/Channel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Channel.cpp.i
+.PHONY : src/Channel.cpp.i
+
+src/Channel.s: src/Channel.cpp.s
+.PHONY : src/Channel.s
+
+# target to generate assembly for a file
+src/Channel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Channel.cpp.s
+.PHONY : src/Channel.cpp.s
+
+src/Connection.o: src/Connection.cpp.o
+.PHONY : src/Connection.o
+
+# target to build an object file
+src/Connection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Connection.cpp.o
+.PHONY : src/Connection.cpp.o
+
+src/Connection.i: src/Connection.cpp.i
+.PHONY : src/Connection.i
+
+# target to preprocess a source file
+src/Connection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Connection.cpp.i
+.PHONY : src/Connection.cpp.i
+
+src/Connection.s: src/Connection.cpp.s
+.PHONY : src/Connection.s
+
+# target to generate assembly for a file
+src/Connection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Connection.cpp.s
+.PHONY : src/Connection.cpp.s
+
+src/EventLoop.o: src/EventLoop.cpp.o
+.PHONY : src/EventLoop.o
+
+# target to build an object file
+src/EventLoop.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/EventLoop.cpp.o
+.PHONY : src/EventLoop.cpp.o
+
+src/EventLoop.i: src/EventLoop.cpp.i
+.PHONY : src/EventLoop.i
+
+# target to preprocess a source file
+src/EventLoop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/EventLoop.cpp.i
+.PHONY : src/EventLoop.cpp.i
+
+src/EventLoop.s: src/EventLoop.cpp.s
+.PHONY : src/EventLoop.s
+
+# target to generate assembly for a file
+src/EventLoop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/EventLoop.cpp.s
+.PHONY : src/EventLoop.cpp.s
+
+src/InetAddress.o: src/InetAddress.cpp.o
+.PHONY : src/InetAddress.o
+
+# target to build an object file
+src/InetAddress.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/InetAddress.cpp.o
+.PHONY : src/InetAddress.cpp.o
+
+src/InetAddress.i: src/InetAddress.cpp.i
+.PHONY : src/InetAddress.i
+
+# target to preprocess a source file
+src/InetAddress.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/InetAddress.cpp.i
+.PHONY : src/InetAddress.cpp.i
+
+src/InetAddress.s: src/InetAddress.cpp.s
+.PHONY : src/InetAddress.s
+
+# target to generate assembly for a file
+src/InetAddress.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/InetAddress.cpp.s
+.PHONY : src/InetAddress.cpp.s
+
+src/Server.o: src/Server.cpp.o
+.PHONY : src/Server.o
+
+# target to build an object file
+src/Server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Server.cpp.o
+.PHONY : src/Server.cpp.o
+
+src/Server.i: src/Server.cpp.i
+.PHONY : src/Server.i
+
+# target to preprocess a source file
+src/Server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Server.cpp.i
+.PHONY : src/Server.cpp.i
+
+src/Server.s: src/Server.cpp.s
+.PHONY : src/Server.s
+
+# target to generate assembly for a file
+src/Server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Server.cpp.s
+.PHONY : src/Server.cpp.s
+
+src/Socket.o: src/Socket.cpp.o
+.PHONY : src/Socket.o
+
+# target to build an object file
+src/Socket.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Socket.cpp.o
+.PHONY : src/Socket.cpp.o
+
+src/Socket.i: src/Socket.cpp.i
+.PHONY : src/Socket.i
+
+# target to preprocess a source file
+src/Socket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Socket.cpp.i
+.PHONY : src/Socket.cpp.i
+
+src/Socket.s: src/Socket.cpp.s
+.PHONY : src/Socket.s
+
+# target to generate assembly for a file
+src/Socket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/Socket.cpp.s
+.PHONY : src/Socket.cpp.s
+
+src/ThreadPool.o: src/ThreadPool.cpp.o
+.PHONY : src/ThreadPool.o
+
+# target to build an object file
+src/ThreadPool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/ThreadPool.cpp.o
+.PHONY : src/ThreadPool.cpp.o
+
+src/ThreadPool.i: src/ThreadPool.cpp.i
+.PHONY : src/ThreadPool.i
+
+# target to preprocess a source file
+src/ThreadPool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/ThreadPool.cpp.i
+.PHONY : src/ThreadPool.cpp.i
+
+src/ThreadPool.s: src/ThreadPool.cpp.s
+.PHONY : src/ThreadPool.s
+
+# target to generate assembly for a file
+src/ThreadPool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/ThreadPool.cpp.s
+.PHONY : src/ThreadPool.cpp.s
+
+src/epoll.o: src/epoll.cpp.o
+.PHONY : src/epoll.o
+
+# target to build an object file
+src/epoll.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/epoll.cpp.o
+.PHONY : src/epoll.cpp.o
+
+src/epoll.i: src/epoll.cpp.i
+.PHONY : src/epoll.i
+
+# target to preprocess a source file
+src/epoll.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/epoll.cpp.i
+.PHONY : src/epoll.cpp.i
+
+src/epoll.s: src/epoll.cpp.s
+.PHONY : src/epoll.s
+
+# target to generate assembly for a file
+src/epoll.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/epoll.cpp.s
+.PHONY : src/epoll.cpp.s
+
+src/util.o: src/util.cpp.o
+.PHONY : src/util.o
+
+# target to build an object file
+src/util.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/util.cpp.o
+.PHONY : src/util.cpp.o
+
+src/util.i: src/util.cpp.i
+.PHONY : src/util.i
+
+# target to preprocess a source file
+src/util.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/util.cpp.i
+.PHONY : src/util.cpp.i
+
+src/util.s: src/util.cpp.s
+.PHONY : src/util.s
+
+# target to generate assembly for a file
+src/util.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServerLib.dir/build.make CMakeFiles/WebServerLib.dir/src/util.cpp.s
+.PHONY : src/util.cpp.s
+
+test/ThreadPoolTest.o: test/ThreadPoolTest.cpp.o
+.PHONY : test/ThreadPoolTest.o
+
+# target to build an object file
+test/ThreadPoolTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPoolTest.dir/build.make CMakeFiles/ThreadPoolTest.dir/test/ThreadPoolTest.cpp.o
+.PHONY : test/ThreadPoolTest.cpp.o
+
+test/ThreadPoolTest.i: test/ThreadPoolTest.cpp.i
+.PHONY : test/ThreadPoolTest.i
+
+# target to preprocess a source file
+test/ThreadPoolTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPoolTest.dir/build.make CMakeFiles/ThreadPoolTest.dir/test/ThreadPoolTest.cpp.i
+.PHONY : test/ThreadPoolTest.cpp.i
+
+test/ThreadPoolTest.s: test/ThreadPoolTest.cpp.s
+.PHONY : test/ThreadPoolTest.s
+
+# target to generate assembly for a file
+test/ThreadPoolTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPoolTest.dir/build.make CMakeFiles/ThreadPoolTest.dir/test/ThreadPoolTest.cpp.s
+.PHONY : test/ThreadPoolTest.cpp.s
+
+test/multipile_client.o: test/multipile_client.cpp.o
+.PHONY : test/multipile_client.o
+
+# target to build an object file
+test/multipile_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multipile_client.dir/build.make CMakeFiles/multipile_client.dir/test/multipile_client.cpp.o
+.PHONY : test/multipile_client.cpp.o
+
+test/multipile_client.i: test/multipile_client.cpp.i
+.PHONY : test/multipile_client.i
+
+# target to preprocess a source file
+test/multipile_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multipile_client.dir/build.make CMakeFiles/multipile_client.dir/test/multipile_client.cpp.i
+.PHONY : test/multipile_client.cpp.i
+
+test/multipile_client.s: test/multipile_client.cpp.s
+.PHONY : test/multipile_client.s
+
+# target to generate assembly for a file
+test/multipile_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multipile_client.dir/build.make CMakeFiles/multipile_client.dir/test/multipile_client.cpp.s
+.PHONY : test/multipile_client.cpp.s
+
+test/server.o: test/server.cpp.o
+.PHONY : test/server.o
+
+# target to build an object file
+test/server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/test/server.cpp.o
+.PHONY : test/server.cpp.o
+
+test/server.i: test/server.cpp.i
+.PHONY : test/server.i
+
+# target to preprocess a source file
+test/server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/test/server.cpp.i
+.PHONY : test/server.cpp.i
+
+test/server.s: test/server.cpp.s
+.PHONY : test/server.s
+
+# target to generate assembly for a file
+test/server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/test/server.cpp.s
+.PHONY : test/server.cpp.s
+
+test/single_client.o: test/single_client.cpp.o
+.PHONY : test/single_client.o
+
+# target to build an object file
+test/single_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_client.dir/build.make CMakeFiles/single_client.dir/test/single_client.cpp.o
+.PHONY : test/single_client.cpp.o
+
+test/single_client.i: test/single_client.cpp.i
+.PHONY : test/single_client.i
+
+# target to preprocess a source file
+test/single_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_client.dir/build.make CMakeFiles/single_client.dir/test/single_client.cpp.i
+.PHONY : test/single_client.cpp.i
+
+test/single_client.s: test/single_client.cpp.s
+.PHONY : test/single_client.s
+
+# target to generate assembly for a file
+test/single_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_client.dir/build.make CMakeFiles/single_client.dir/test/single_client.cpp.s
+.PHONY : test/single_client.cpp.s
+
+test/test.o: test/test.cpp.o
+.PHONY : test/test.o
+
+# target to build an object file
+test/test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/test.cpp.o
+.PHONY : test/test.cpp.o
+
+test/test.i: test/test.cpp.i
+.PHONY : test/test.i
+
+# target to preprocess a source file
+test/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/test.cpp.i
+.PHONY : test/test.cpp.i
+
+test/test.s: test/test.cpp.s
+.PHONY : test/test.s
+
+# target to generate assembly for a file
+test/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/test.cpp.s
+.PHONY : test/test.cpp.s
 
 # Help Target
 help:
@@ -280,18 +586,60 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... build-tests"
-	@echo "... check-format"
-	@echo "... check-tests"
-	@echo "... clang-tidy"
-	@echo "... cpplint"
-	@echo "... format"
 	@echo "... ThreadPoolTest"
-	@echo "... hwy_shared"
+	@echo "... WebServerLib"
 	@echo "... multipile_client"
 	@echo "... server"
 	@echo "... single_client"
 	@echo "... test"
+	@echo "... src/Acceptor.o"
+	@echo "... src/Acceptor.i"
+	@echo "... src/Acceptor.s"
+	@echo "... src/Buffer.o"
+	@echo "... src/Buffer.i"
+	@echo "... src/Buffer.s"
+	@echo "... src/Channel.o"
+	@echo "... src/Channel.i"
+	@echo "... src/Channel.s"
+	@echo "... src/Connection.o"
+	@echo "... src/Connection.i"
+	@echo "... src/Connection.s"
+	@echo "... src/EventLoop.o"
+	@echo "... src/EventLoop.i"
+	@echo "... src/EventLoop.s"
+	@echo "... src/InetAddress.o"
+	@echo "... src/InetAddress.i"
+	@echo "... src/InetAddress.s"
+	@echo "... src/Server.o"
+	@echo "... src/Server.i"
+	@echo "... src/Server.s"
+	@echo "... src/Socket.o"
+	@echo "... src/Socket.i"
+	@echo "... src/Socket.s"
+	@echo "... src/ThreadPool.o"
+	@echo "... src/ThreadPool.i"
+	@echo "... src/ThreadPool.s"
+	@echo "... src/epoll.o"
+	@echo "... src/epoll.i"
+	@echo "... src/epoll.s"
+	@echo "... src/util.o"
+	@echo "... src/util.i"
+	@echo "... src/util.s"
+	@echo "... test/ThreadPoolTest.o"
+	@echo "... test/ThreadPoolTest.i"
+	@echo "... test/ThreadPoolTest.s"
+	@echo "... test/multipile_client.o"
+	@echo "... test/multipile_client.i"
+	@echo "... test/multipile_client.s"
+	@echo "... test/server.o"
+	@echo "... test/server.i"
+	@echo "... test/server.s"
+	@echo "... test/single_client.o"
+	@echo "... test/single_client.i"
+	@echo "... test/single_client.s"
+	@echo "... test/test.o"
+	@echo "... test/test.i"
+	@echo "... test/test.s"
 .PHONY : help
 
 

@@ -1,7 +1,7 @@
-#include "epoll.h"
-#include "Channel.h"
+#include "include/epoll.h"
+#include "include/Channel.h"
 #include "cstring"
-#include "util.h"
+#include "include/util.h"
 #include <string.h>
 #include <unistd.h>
 #define MAX_EVENTS 1024
