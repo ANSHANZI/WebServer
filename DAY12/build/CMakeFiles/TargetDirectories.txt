@@ -1,8 +1,0 @@
-/home/hu/WebSever/30DAYS/DAY12/build/CMakeFiles/WebServerLib.dir
-/home/hu/WebSever/30DAYS/DAY12/build/CMakeFiles/ThreadPoolTest.dir
-/home/hu/WebSever/30DAYS/DAY12/build/CMakeFiles/multipile_client.dir
-/home/hu/WebSever/30DAYS/DAY12/build/CMakeFiles/server.dir
-/home/hu/WebSever/30DAYS/DAY12/build/CMakeFiles/single_client.dir
-/home/hu/WebSever/30DAYS/DAY12/build/CMakeFiles/test.dir
-/home/hu/WebSever/30DAYS/DAY12/build/CMakeFiles/edit_cache.dir
-/home/hu/WebSever/30DAYS/DAY12/build/CMakeFiles/rebuild_cache.dir
