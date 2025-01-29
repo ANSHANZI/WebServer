@@ -51,6 +51,7 @@ void Connection::Read(){
 }
 
 void Connection::Write(){
+    //std::cout<<"write"<<std::endl;
     ASSERT(state == State::Connected, "Connection is not connected");
     if(clnt_sockfd->IsNoneBlocking()){
       WriteNonBlocking();
@@ -79,8 +80,7 @@ void Connection::ReadNonBlocking(){
       continue;
     }else if (read_bytes == -1 &&
                ((errno == EAGAIN) ||(errno ==EWOULDBLOCK))) { // 非阻塞IO，这个条件表示数据全部读取完毕
-      printf("message from client fd %d: %s\n",sockfd,readBuffer->c_str());
-      readBuffer->clear();
+      //printf("message from client fd %d: %s\n",sockfd,readBuffer->c_str());
       break;
     }else{
       printf("Other error on client fd %d\n", sockfd);
@@ -117,6 +117,7 @@ void Connection::WriteNonBlocking(){
   int sockfd = clnt_sockfd->GetSockFd();
   char buf[writeBuffer->size()];
   memcpy(buf, writeBuffer->c_str(), writeBuffer->size());
+  //std::cout<<writeBuffer->c_str()<<std::endl;
   int data_size = writeBuffer->size();//要发送的总数据量
   int data_left = data_size;//表示还剩余需要发送的数据量
   while (data_left>0) {
